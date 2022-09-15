@@ -8,13 +8,13 @@ export interface Country {
     independent:  boolean;
     status:       string;
     unMember:     boolean;
-    currencies:   Currencies;
+    currencies:   { [key: string]: Currencies};
     idd:          Idd;
     capital:      string[];
     altSpellings: string[];
     region:       string;
     subregion:    string;
-    languages:    Languages;
+    languages:    { key: string };
     translations: { [key: string]: Translation };
     latlng:       number[];
     landlocked:   boolean;
@@ -51,17 +51,12 @@ export interface CoatOfArms {
 }
 
 export interface Currencies {
-    ARS: Ars;
-    CRC: Crc;
+    name: string;
+    symbol: string;
 }
 
 export interface Ars {
     name:   string;
-    symbol: string;
-}
-
-export interface Crc {
-    name: string;
     symbol: string;
 }
 

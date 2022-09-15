@@ -7,7 +7,7 @@
 <ng-template #divCountry>
     <div class="row">
         <div class="col-12">
-            <h1 class="text-primary">Country: <small class="text-dark">{{country.name.common}}</small></h1>
+            <h1 class="text-dark">{{country.name.common}}</h1>
         </div>
     </div>
 
@@ -44,9 +44,26 @@
                     <strong>Subregion: </strong> {{country.subregion}}
                 </li>
                 <li class="list-group-item">
-                    <strong>Languages: </strong> {{country.languages.spa}}
+                    <strong>Currency: </strong> {{currency.name}}
+                </li>
+                <li class="list-group-item">
+                    <strong>Language: </strong> {{language}}
                 </li>
             </ul>
         </div>
     </div>
+    <h3>Traductions</h3>
+    <div class="row">
+        <div class="col">
+            <span 
+                *ngFor="let translation of translations" 
+                class="badge bg-secondary ms-1" >
+                    {{translation.common}}
+            </span>
+        </div>
+    </div>
+
+    <!--<pre class="mt-5">
+        {{country | json}}
+    </pre>-->
 </ng-template>
