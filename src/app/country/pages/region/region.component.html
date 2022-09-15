@@ -1,0 +1,24 @@
+<h2>By region</h2>
+<hr>
+<div class="row">
+    <div class="col">
+        <app-country-input
+            (onEnter)="search($event)"
+            placeholder="Enter a region/continent" >
+        </app-country-input>
+    </div>
+</div>
+<hr>
+
+<app-generic-error 
+    [isError]="isError"
+    [termino]="termino">
+</app-generic-error>
+
+<div
+    *ngIf="countries.length > 0"
+    class="row">
+    <div class="col">
+        <app-country-table [countries]="countries"></app-country-table>
+    </div>
+</div>
