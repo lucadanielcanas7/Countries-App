@@ -1,0 +1,56 @@
+{
+    "regions": [
+        {
+            "name": "EU",
+            "fullname": "European Union"
+        },
+        {
+            "name": "EFTA",
+            "fullname": "European Free Trade Association"
+        },
+        {
+            "name": "CARICOM",
+            "fullname": "Caribbean Community"
+        },
+        {
+            "name": "PA",
+            "fullname": "Pacific Alliance"   
+        },
+        {
+            "name" : "AU",
+            "fullname": "African Union"
+        },
+        {
+            "name": "USAN",
+            "fullname": "Union of South American Nations"
+        },
+        {
+            "name": "EEU",
+            "fullname": "Eurasian Economic Union"
+        },
+        {
+            "name": "AL",
+            "fullname": "Arab League"
+        },
+        {
+            "name": "ASEAN",
+            "fullname": "Association of Southeast Asian Nations"
+        },
+        {
+            "name": "CAIS",
+            "fullname": "Central American Integration System"
+        },
+        {
+            "name": "CEFTA",
+            "fullname": "Central American Free Trade Agreement"
+        },
+        {
+            "name": "NAFTA",
+            "fullname": "North American Free Trade Agreement"
+        },
+        {
+            "name": "SAARC",
+            "fullname": "South Asian Association for Regional Cooperation"
+        }
+    ]
+}

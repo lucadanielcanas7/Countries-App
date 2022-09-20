@@ -10,9 +10,15 @@ export class CountryTableComponent implements OnInit {
 
   @Input() countries: Country[] = [];
 
+  nameIsAnObject = false;
+
   constructor() { }
 
   ngOnInit(): void {
+
+    this.countries.forEach(e => {
+      if (typeof e.name === 'object') { this.nameIsAnObject = true } else { this.nameIsAnObject = false }
+    });
   }
 
 }
